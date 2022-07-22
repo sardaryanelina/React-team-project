@@ -12,6 +12,7 @@ import {
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home';
+import NotFoundPage from '../pages/NotFoundPage';
 
 function NavBarComp() {
     return (
@@ -19,7 +20,7 @@ function NavBarComp() {
             <div>
                 <Navbar bg="dark" variant='dark' expand="lg">
                     <Container>
-                        <Navbar.Brand href="#home">
+                        <Navbar.Brand as={Link} to="/">
                             {/* <img
               alt=""
               src="../images/logotype.png"
@@ -43,7 +44,7 @@ function NavBarComp() {
                                     </NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">For kids</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4">
+                                    <NavDropdown.Item as={Link} to="/home">
                                         All products
                                     </NavDropdown.Item>
                                 </NavDropdown>
@@ -54,9 +55,11 @@ function NavBarComp() {
             </div>
             <div>
                 <Routes>
-                    <Route path="/home" element={<Home/>} />
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/contact" element={<Contact/>} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<NotFoundPage />} />
                 </Routes>
             </div>
         </Router>
