@@ -12,7 +12,11 @@ import {
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home';
+import KidsProducts from '../pages/KidsGlasses';
+import MenProducts from '../pages/MenGlasses';
+import WomenProducts from '../pages/WomenGlasses';
 import NotFoundPage from '../pages/NotFoundPage';
+import logo from '../images/logo_white.png';
 
 function NavBarComp() {
     return (
@@ -21,16 +25,13 @@ function NavBarComp() {
                 <Navbar bg="dark" variant='dark' expand="lg">
                     <Container>
                         <Navbar.Brand as={Link} to="/">
-                            {/* <img
-              alt=""
-              src="../images/logotype.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '} */}
-                            MARUEL
+                            <img
+                                alt="Logo of Maruel"
+                                src={logo}
+                                width="80"
+                                className="d-inline-block"
+                            />{' '}
                         </Navbar.Brand>
-                        {/* <Navbar.Brand href="#home">MARUEL</Navbar.Brand> */}
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
@@ -38,11 +39,11 @@ function NavBarComp() {
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                                 <NavDropdown title="Sunglasses" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">For women</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">
+                                    <NavDropdown.Item as={Link} to="/women">For women</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/men">
                                         For men
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">For kids</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/kids">For kids</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to="/home">
                                         All products
@@ -59,6 +60,9 @@ function NavBarComp() {
                     <Route path="/home" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/women" element={<WomenProducts />} />
+                    <Route path="/men" element={<MenProducts />} />
+                    <Route path="/kids" element={<KidsProducts />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
             </div>

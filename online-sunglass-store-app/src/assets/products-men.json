@@ -1,0 +1,74 @@
+[{
+        "id": "Sunglasses1",
+        "name": "Sunglasses1",
+        "price": 35.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2021/07/26/16272908082c26d5ef31bec3339501f06b5260bfcf_thumbnail_900x.webp",
+        "description": "Sunglasses1",
+        "url": "/api/products/halfmoon"
+    },
+    {
+        "id": "Sunglasses2",
+        "name": "Sunglasses2",
+        "price": 20.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2021/07/26/1627288763e5a154f206dc687db588ca566ed780be_thumbnail_900x.webp",
+        "description": "Sunglasses2",
+        "url": "/api/products/wallet"
+    },
+    {
+        "id": "Sunglasses3",
+        "name": "Sunglasses3",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2022/06/07/1654588473e75d57a7371eb49baa5e4d735b08dc48_thumbnail_900x.webp",
+        "description": "Sunglasses3",
+        "url": "/api/products/veiltail"
+    }, {
+        "id": "Sunglasses4",
+        "name": "Sunglasses4",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2021/04/16/1618542287afeb46a624f99153aa401ccc4cbe7c59_thumbnail_900x.webp",
+        "description": "Sunglasses4",
+        "url": "/api/products/veiltail"
+    }, {
+        "id": "Sunglasses5",
+        "name": "Sunglasses5",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2022/04/08/164939603334235fd6da3228252582b6e981046707_thumbnail_900x.webp",
+        "description": "Sunglasses5",
+        "url": "/api/products/veiltail"
+    }, {
+        "id": "Sunglasses6",
+        "name": "Sunglasses6",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2022/02/28/1646036832ec78a012e40c865fbc132bdcd8760ff7_thumbnail_900x.webp",
+        "description": "Sunglasses6",
+        "url": "/api/products/veiltail"
+    }, {
+        "id": "Sunglasses7",
+        "name": "Sunglasses7",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2022/02/28/1646036832ec78a012e40c865fbc132bdcd8760ff7_thumbnail_900x.webp",
+        "description": "Sunglasses7",
+        "url": "/api/products/veiltail"
+    }, {
+        "id": "Sunglasses8",
+        "name": "Sunglasses8",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2022/02/28/1646036832ec78a012e40c865fbc132bdcd8760ff7_thumbnail_900x.webp",
+        "description": "Sunglasses8",
+        "url": "/api/products/veiltail"
+    }, {
+        "id": "Sunglasses9",
+        "name": "Sunglasses9",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2022/02/28/1646036832ec78a012e40c865fbc132bdcd8760ff7_thumbnail_900x.webp",
+        "description": "Sunglasses9",
+        "url": "/api/products/veiltail"
+    }, {
+        "id": "Sunglasses9",
+        "name": "Sunglasses9",
+        "price": 5.0,
+        "imageUrl": "https://img.ltwebstatic.com/images3_pi/2022/02/28/1646036832ec78a012e40c865fbc132bdcd8760ff7_thumbnail_900x.webp",
+        "description": "Sunglasses9",
+        "url": "/api/products/veiltail"
+    }
+]

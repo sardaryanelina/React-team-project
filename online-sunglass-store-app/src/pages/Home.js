@@ -1,9 +1,49 @@
 import React from 'react';
+import "../index.css"
+import "../card.css"
+import productsMen from "../assets/products-men.json"
+import productsWomen from "../assets/products-women.json"
+import productsKids from "../assets/products-kids.json"
+import Product from "../components/Product";
+
 export default function Home() {
     return (
-        <div>
-            Home
+        <div className={"container"}>
+        <main className={"main"}>
+          <h1>
+            Sunglasses Online Shop
+          </h1>
+          <h1>
+            MAN
+          </h1>
+          <div className={"grid"}>
+            {
+             productsMen.map((product, i) => <Product {...product} key={i}/>)
+            }
+          </div>
+          <h1>
+            WOMAN
+          </h1>
+          <div className={"grid"}>
+            {
+              productsWomen.map((product, i) => <Product {...product} key={i}/>)
+            }
+          </div>
+          <h1>
+            KID
+          </h1>
+          <div className={"grid"}>
+            {
+              productsKids.map((product, i) => <Product {...product} key={i}/>)
+            }
+          </div>
+        </main>
+        <div
+            id="snipcart"
+            data-api-key="NWMwZWNkZGMtZjU2ZS00YzM3LWFlZjYtMmM5Zjk0MWViZDcxNjM3Njg0OTY0ODg5NTk4MTM3" hidden
+        >
         </div>
+      </div>
     );
 
 }
