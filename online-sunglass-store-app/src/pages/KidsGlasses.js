@@ -8,22 +8,15 @@ export default function KidsProducts() {
     return (
         <div className={"container"}>
             <main className={"main"}>
-                <h1>
-                    Sunglasses Online Shop
-                </h1>
-                <h1>
-                    KID
-                </h1>
+                <h1>Collection for children </h1>
                 <div className={"grid"}>
-                    {
-                        productsKids.map((product, i) => <Product {...product} key={i} />)
-                    }
+                    { productsKids.map((product, i) => <Product {...product} key={i} />) }
                 </div>
             </main>
             <div
                 id="snipcart"
-                data-api-key="NWMwZWNkZGMtZjU2ZS00YzM3LWFlZjYtMmM5Zjk0MWViZDcxNjM3Njg0OTY0ODg5NTk4MTM3" hidden
-            >
+                data-api-key="NWMwZWNkZGMtZjU2ZS00YzM3LWFlZjYtMmM5Zjk0MWViZDcxNjM3Njg0OTY0ODg5NTk4MTM3" 
+                hidden>
             </div>
         </div>
     );
