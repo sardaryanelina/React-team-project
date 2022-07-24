@@ -15,14 +15,16 @@ import Home from '../pages/Home';
 import KidsProducts from '../pages/KidsGlasses';
 import MenProducts from '../pages/MenGlasses';
 import WomenProducts from '../pages/WomenGlasses';
-import NotFoundPage from '../pages/NotFoundPage';
+import NotFound from '../pages/NotFound';
 import logo from '../images/logo_white.png';
+import ProductItem from '../pages/Product';
+import '../App.css';
 
 function NavBarComp() {
     return (
         <Router>
             <div>
-                <Navbar bg="dark" variant='dark' expand="lg">
+                <Navbar bg="dark" variant='dark' expand="lg" className='fixed-top'>
                     <Container>
                         <Navbar.Brand as={Link} to="/">
                             <img
@@ -63,7 +65,8 @@ function NavBarComp() {
                     <Route path="/women" element={<WomenProducts />} />
                     <Route path="/men" element={<MenProducts />} />
                     <Route path="/kids" element={<KidsProducts />} />
-                    <Route path="*" element={<NotFoundPage />} />
+                    <Route path="*" element={<NotFound/>} />
+                    <Route path='/product/:name' element={<ProductItem />} />
                 </Routes>
             </div>
         </Router>

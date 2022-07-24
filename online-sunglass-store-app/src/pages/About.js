@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className='container-fluid'>
             <div className="row p-4">
-                <div className="pt-4">
+                <div className="pt-4 m-4">
                     <img  src={logo} alt="Logo of Maruel"  width="220"/>
                 </div>
                 <p className="mt-5"> <strong>Program: </strong>MAP-06</p>

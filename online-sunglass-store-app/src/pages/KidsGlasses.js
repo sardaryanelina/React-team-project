@@ -1,10 +1,11 @@
 import React from 'react';
 import "../index.css"
 import "../card.css"
-import productsKids from "../assets/products-kids.json"
+import products from "../assets/products-content.json"
 import Product from "../components/Product";
 
 export default function KidsProducts() {
+    const productsKids = products.filter(prod => prod.category === "kid");
     return (
         <div className={"container"}>
             <main className={"main"}>
