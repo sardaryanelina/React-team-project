@@ -1,12 +1,26 @@
 import React from 'react';
+import logo from '../images/Logo_withYellow.png';
+
 export default function Contact() {
+   
     return (
-        <div className='container-fluid  m-4"'>
-            <div className="row p-4  m-4">
-                <div className="p-4 m-4">
-                    Contact Us
+        <div className='container-fluid'>
+         <div className="row p-4">
+                <div className="pt-4 m-4">
+                <img  src={logo} alt="Logo of Maruel"  width="220"/>
+            </div>
+        
+            <p>Elina Sardaryan</p>
+            <p className="mt-4"><strong>Linkedin: 
+                </strong><a href='https://www.linkedin.com/in/elinasardaryan/' target={'_blank'}> https://www.linkedin.com/in/elinasardaryan/</a></p>
+                <p>Mahyar Kordmafi</p>
+                <p className="mt-4"><strong>Linkedin: 
+                </strong><a href='https://www.linkedin.com/in/mahyar-kordmafi-a0526410/' target={'_blank'}> https://www.linkedin.com/in/mahyar-kordmafi-a0526410/</a></p>
+                <p>Rouqi Wang</p>
+                <p className="mt-4"><strong>Linkedin: 
+                </strong><a href='https://www.linkedin.com/in/wang-ruoqi-b721901a4/' target={'_blank'}> https://www.linkedin.com/in/wang-ruoqi-b721901a4/</a></p>
+    
                 </div>
             </div>
-        </div>
     );
 }
