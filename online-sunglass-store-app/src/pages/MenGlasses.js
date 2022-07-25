@@ -9,7 +9,7 @@ export default function MenProducts() {
     return (
         <div className={"container"}>
             <main className={"main"}>
-                <h1>Collection for men </h1>
+                <h1>MEN SUNGLASSES</h1>
                 <div className={"grid"}>
                     { productsMen.map((product, i) => <Product {...product} key={i} />)}
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/Logo_withYellow.png';
+
 export default function About() {
     return (
         <div className='container-fluid'>
@@ -15,5 +16,4 @@ export default function About() {
             </div>
         </div>
     );
-
 }

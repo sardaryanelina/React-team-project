@@ -32,7 +32,7 @@ function NavBarComp() {
                                 src={logo}
                                 width="80"
                                 className="d-inline-block"
-                            />{' '}
+                            />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">

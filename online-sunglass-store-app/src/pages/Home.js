@@ -3,7 +3,7 @@ import "../index.css"
 import "../card.css"
 import productsList from "../assets/products-content.json"
 import Product from "../components/Product";
-import logo from '../images/logo.png';
+import logo from '../images/Logo_withYellow.png';
 
 export default function Home() {
   return (
