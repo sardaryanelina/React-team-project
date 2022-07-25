@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../images/Logo_withYellow.png';
 import Product from "../components/Product";
 import NotFound from './NotFound';
-import { Carousel, Card, Row, Col, Container } from 'react-bootstrap';
+import { Carousel, Card, Row, Col, Container, Button } from 'react-bootstrap';
 
 function ProductItem() {
     let params = useParams();
@@ -55,6 +55,14 @@ function ProductItem() {
                                             </Carousel.Item>
                                         </Carousel>
                                         <p> Price: ${product.price} </p>
+                                        <Button className="snipcart-add-item "
+                                            data-item-id={product.id}
+                                            data-item-image={product.imageUrl[0].url}
+                                            data-item-name={product.name}
+                                            data-item-url="/"
+                                            data-item-price={product.price} variant=" btn-dark">
+                                            Add to Cart
+                                        </Button>
                                         <p className="pt-4">{product.description} </p>
                                     </Card.Body>
                                 </Card>
