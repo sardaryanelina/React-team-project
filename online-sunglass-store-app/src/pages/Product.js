@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../images/Logo_withYellow.png';
 import Product from "../components/Product";
 import NotFound from './NotFound';
-import { Carousel, Card, Row, Col, Container, Button } from 'react-bootstrap';
+import { Carousel, Card, Row, Container, Button } from 'react-bootstrap';
 
 function ProductItem() {
     let params = useParams();

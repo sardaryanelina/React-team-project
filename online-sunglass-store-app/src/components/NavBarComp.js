@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -19,8 +19,12 @@ import NotFound from '../pages/NotFound';
 import logo from '../images/logo_white.png';
 import ProductItem from '../pages/Product';
 import '../App.css';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import SearchList from './SearchList';
 
 function NavBarComp() {
+    const [inputText, setInputText] = useState("");
     return (
         <Router>
             <div>
@@ -51,7 +55,18 @@ function NavBarComp() {
                                         All products
                                     </NavDropdown.Item>
                                 </NavDropdown>
-                            </Nav>
+                            </Nav>                            
+                                <Form className="d-flex">
+                                    <Form.Control
+                                        type="search"
+                                        placeholder="Search"
+                                        className="me-2"
+                                        aria-label="Search"
+                                        id="outlined-basic"
+                                        onChange={e => setInputText(e.target.value.toLowerCase())}
+                                    />
+                                    <Button type='submit' form='outlined-basic' as={Link} to="/search" variant="outline-warning">Search</Button>
+                                </Form>                        
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
@@ -65,11 +80,13 @@ function NavBarComp() {
                     <Route path="/women" element={<WomenProducts />} />
                     <Route path="/men" element={<MenProducts />} />
                     <Route path="/kids" element={<KidsProducts />} />
-                    <Route path="*" element={<NotFound/>} />
+                    <Route path="*" element={<NotFound />} />
+                    <Route path="/search" element={<SearchList input={inputText} />} />
                     <Route path='/product/:name' element={<ProductItem />} />
                 </Routes>
             </div>
         </Router>
+
     );
 }
 
