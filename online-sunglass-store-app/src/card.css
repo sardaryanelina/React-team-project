@@ -37,3 +37,7 @@ a:hover{
     padding: .2em;
     background-color: black;
 }
+
+.snipcart * {
+    margin:10px;
+}
