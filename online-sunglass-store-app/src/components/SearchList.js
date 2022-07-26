@@ -17,16 +17,9 @@ export default function SearchList(props) {
                 </div>
             </div>);
     }
+
     const productsSearched = products.filter(prod => prod.name.toLowerCase().includes(input));
-    if (!productsSearched) {
-        return (
-            <div className='container-fluid'>
-                <div className="row p-4">
-                    <h1>No Product  was found by name {input}</h1>
-                </div>
-            </div>
-            );
-    }
+    
     return (
         <div className={"container"}>
             <main className={"main"}>
