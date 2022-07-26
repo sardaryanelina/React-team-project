@@ -11,3 +11,8 @@ Used sources:
 3. https://www.linkedin.com/learning/react-js-essential-training-14836121/what-is-react
 4. https://www.pexels.com/
 5. https://unsplash.com/
+6. https://www.netlify.com/
+
+
+Deployed in Netlify 
+https://62df7b3b7544b8356ac7acff--tourmaline-cajeta-65552f.netlify.app/
