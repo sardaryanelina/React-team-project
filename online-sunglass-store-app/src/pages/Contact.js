@@ -15,7 +15,7 @@ export default function Contact() {
                 <p className="mt-4">Mahyar Kordmafi</p>
                 <p ><strong>Linkedin:
                 </strong><a href='https://www.linkedin.com/in/mahyar-kordmafi-a0526410/' target={'_blank'}> https://www.linkedin.com/in/mahyar-kordmafi-a0526410/</a></p>
-                <p className="mt-4">Rouqi Wang</p>
+                <p className="mt-4">Ruoqi Wang</p>
                 <p ><strong>Linkedin:
                 </strong><a href='https://www.linkedin.com/in/wang-ruoqi-b721901a4/' target={'_blank'}> https://www.linkedin.com/in/wang-ruoqi-b721901a4/</a></p>
             </div>
